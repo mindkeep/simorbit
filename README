@@ -1,0 +1,34 @@
+---------------
+SimOrbit README
+---------------
+
+Overview
+
+This project aims to be a small planetary orbital simulation using OGRE as a
+Framework. It may grow from there, but today all that is planned will likely
+serve as tutorial framework. Mostly, this is an excuse to play with some new
+(to me) tools and libraries. Any reviews or suggestions are of course
+appreciated.
+
+
+Building
+
+% cmake .
+% make
+
+Hopefully, that's it. Today, this is working on Linux, and I may get things
+working on MacOS and/or Windows if time permits.
+
+
+TODO
+
+Ha! Everything?
+* make cmake play nice with OGRE
+* base Ogre Apllication
+* star, planets, moons
+** smaller satellites?
+** stars plural?
+* circular orbits
+* calculated gravity based obits
+* QT or GTK windowed niceties?
+
