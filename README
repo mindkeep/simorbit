@@ -13,7 +13,7 @@ appreciated.
 
 Building
 
-% cmake .
+% ./bootstrap.sh
 % make
 
 Hopefully, that's it. Today, this is working on Linux, and I may get things
@@ -23,7 +23,7 @@ working on MacOS and/or Windows if time permits.
 TODO
 
 Ha! Everything?
-* make cmake play nice with OGRE
+* make cmake play nice with OGRE (done?)
 * base Ogre Apllication
 * star, planets, moons
 ** smaller satellites?

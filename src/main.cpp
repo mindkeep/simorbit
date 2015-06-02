@@ -44,7 +44,8 @@ int main(int argc, char** argv)
 
             // display help if requested, do this before notify might throw
             if (vm.count("help")) {
-                std::cout << "Usage:\n" << desc << std::endl;
+                std::cout << "Usage: " << argv[0] << " [options]\n"
+                    << desc << std::endl;
                 return SUCCESS;
             }
 
@@ -53,7 +54,8 @@ int main(int argc, char** argv)
         }
         catch (po::error& e) {
             std::cerr << "ERROR: " << e.what() << std::endl;
-            std::cerr << desc << std::endl;
+            std::cerr << "Usage: " << argv[0] << " [options]\n"
+                << desc << std::endl;
             return ERROR_USAGE;
         }
 
@@ -71,5 +73,4 @@ int main(int argc, char** argv)
     }
 
     return SUCCESS;
-
 }
